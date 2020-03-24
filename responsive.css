@@ -11,7 +11,9 @@
 @media (max-width:1000px){
 .contents{
     width:100%;
+   padding-top:170px;
   }
+
 }
 
 @media (max-width:750px) {
@@ -22,9 +24,7 @@
     text-align: center;
 
   }
-  #language-learned{
-  padding-top: 10px;
-  }
+
 #contacts{
   font-size:22px;
 

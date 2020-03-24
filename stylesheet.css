@@ -81,7 +81,6 @@ display:none;
 }
 
 .introduction{
-height:400px;
 background-color:  #101045  ;
 color:black;
 
@@ -95,7 +94,7 @@ color:black;
 
 .text{
   width:400px;
-  margin-bottom: 3px;
+  padding-bottom: 3px;
 }
 .text span{
   color: #000080 ;
@@ -138,12 +137,6 @@ padding:40px;
     }
 
 
-.footer-go-top a{
-  float: right;
-  padding-right: 20px;
-  padding-top:220px;
-
-}
 
 .down {
  display:none;

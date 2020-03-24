@@ -1,16 +1,22 @@
 *{
   margin: 0px;
   padding-left:0px;
+  font-family: 'Georgia';
 }
 
-.header{
+header{
 height: 140px;
 color:#fff;
 background-color:  #121252 ;
 width:100%;
 }
-.header-logo{
-font-size: 15px;
+#header-logo-text{
+  font-size: 40px;
+}
+
+header a{
+color: white;
+
 }
 
 li{
@@ -31,7 +37,7 @@ margin: auto auto 0px auto;
 padding-top:140px;
 
 }
-.contets h3 {
+.contets a {
 padding-left: 30px;
 padding-top:30px;
   }
@@ -118,13 +124,11 @@ padding:40px;
     }
 
 
-.footer-go-top h3{
+.footer-go-top a{
   float: right;
   padding-right: 20px;
   padding-top:220px;
   color: #fff;
-  border-bottom:2px solid #fff;
-
 }
 
 .down {

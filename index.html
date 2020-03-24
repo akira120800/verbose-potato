@@ -7,20 +7,21 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
   <body>
-<div class="header">
+<header>
     <div class="header-logo">
-      <h1 class="header-logo-text">Akiraのポートフォリオ</h1>
+      <div id="header-logo-text" >Akiraのポートフォリオ</div>
     <div class="header-list">
     <ul>
-        <li >学んだ言語</li>
-        <li >自己紹介</li>
-        <li >お問い合わせ</li>
+        <li><a href="#language-learned">学んだ言語</a></li>
+        <li><a href="#self-intro">自己紹介</a></li>
+        <li><a href="#contacts">お問い合わせ</a></li>
       </ul>
       </div>
     </div>
     </div>
+  </header>
 <div style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRv6IAK8DGFWCqIONIrDVK6QqyhH8FBFfi5XjI4O1iRVaMUIcdM);" class="contents">
-  <h3>学んだ言語(<span>画像をクリック<span>)</h3>
+  <h3 id="language-learned">学んだ言語(<span>画像をクリック<span>)</h3>
 <div class="contents-item">
   <img class="img" src="https://webukatu.com/assets/uploads/img/92e0bf73c1ddc41cee15e953de9c14f69c0f71c7html-easy4bf9a0fdded0c1a2ab018698377419f3c7a21cc0.jpg?1575572580">
 <h5>HTML&CSS</h5>
@@ -60,7 +61,7 @@
 </div>
 </div>
 <div class="introduction" >
-  <div class="introduction-logo">自己紹介
+  <div id="self-intro" class="introduction-logo">自己紹介
   </div>
   <div class="introduction-text">
     <h3 class="text text1"><span>Name</span>:アキラ</h3>
@@ -76,7 +77,7 @@
 </div>
 <div class="footer">
 <div class="footer-logo">
-  <h5>お問い合わせ(<span>画像または文字をクリックすると連絡先が表示されます</span>)</h5>
+  <h5 id="contacts">お問い合わせ(<span>画像または文字をクリックすると連絡先が表示されます</span>)</h5>
 
 </div>
 <div class="footer-contents">
@@ -97,7 +98,7 @@
   </div>
   </div>
   <div class="footer-go-top">
-    <h3>トップへ戻る</h3>
+    <a href=#header-logo-text>トップへ戻る</a>
 
   </div>
 </div>
@@ -105,7 +106,24 @@
 <script>
 $(function(){
   alert();
+$('#header-logo-text').click(function(){
+$('html,body').animate({
 
+  'scrollTop':0
+},500);
+});
+
+$('.contents-item').click(function(){
+ var $answer = $(this).find('.answer');
+ if ($answer.hasClass('open')){
+    $answer.removeClass('open');
+    $answer.slideUp();
+
+  } else{
+    $answer.addClass('open');
+    $answer.slideDown();
+  }
+  });
 });
 </script>
   </body>

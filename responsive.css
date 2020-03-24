@@ -5,7 +5,7 @@
 }
 
 @media (max-width:750px) {
-.contents{
+.footer+.contents+.header{
     width:50%;
   }
 .footer{
@@ -13,3 +13,4 @@
 
   }
 }
+

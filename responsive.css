@@ -1,3 +1,13 @@
+@media (max-width 2000px){
+
+  .contents{
+      width:88%;
+    }
+}
+
+
+
+
 @media (max-width:1000px){
 .contents{
     width:100%;

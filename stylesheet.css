@@ -2,7 +2,6 @@
   margin: 0px;
   padding-left:0px;
   font-family: 'Georgia';
-  box-sizing: border-box;
 
 }
 @media query {maxWidth
@@ -10,7 +9,6 @@
 }
 
 .header{
-height: 140px;
 color:#fff;
 background-color:  #121252 ;
 width:100%;
@@ -93,7 +91,6 @@ color:black;
 }
 
 .text{
-  width:400px;
   padding-bottom: 3px;
 }
 .text span{
@@ -130,6 +127,10 @@ padding: 20px;
 float: left;
 padding:40px;
   }
+.footer-item h3{
+padding-top:6px;
+
+}
 
 .footer-img{
     width: 100px;
@@ -148,7 +149,6 @@ padding:40px;
 }
 
 .addition{
-  height: 0px;
   width: 500px;
   padding:0px 0px 150px 1200px;
 
